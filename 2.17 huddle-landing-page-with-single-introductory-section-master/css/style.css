@@ -1,0 +1,120 @@
+/* ### Primary
+
+- Violet: hsl(257, 40%, 49%)
+- Soft Magenta: hsl(300, 69%, 71%)
+
+## Typography
+
+### Headings
+
+- Family: [Poppins](https://fonts.google.com/specimen/Poppins)
+- Weights: 400, 600
+
+### Body
+
+- Family: [Open Sans](https://fonts.google.com/specimen/Open+Sans) */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(../images/bg-desktop.svg);
+  background-size: cover;
+  background-color: hsl(257, 40%, 49%);
+}
+.container {
+  margin: 0 auto;
+  padding: 3.125rem;
+  max-width: 110rem;
+  /* height: 100vh;
+  height: 100dvh; */
+  font-family: Open Sans;
+  font-weight: 400;
+  /* /* height: 100vh; */
+  /* height: 100dvh; */
+  /* position: relative; */
+  position: relative;
+}
+header {
+  margin-bottom: 6.25rem;
+}
+.huddle-view {
+  max-width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 6.25rem;
+  align-items: center;
+}
+.huddle-img-box img {
+  width: 100%;
+}
+.title {
+  font-family: Poppins;
+  color: #fff;
+  font-size: 4.5rem;
+}
+.huddle-description {
+  font-size: 1.75rem;
+  color: rgb(210, 208, 208);
+  line-height: 1.8;
+  margin-bottom: 1.875rem;
+}
+.huddle-register {
+  padding: 1.5625rem 4.6875rem;
+  background-color: #fff;
+  font-size: 1.375rem;
+  font-weight: 600;
+  color: hsl(257, 40%, 49%);
+  border: none;
+  border-radius: 3.125rem;
+}
+.icons {
+  position: absolute;
+  right: 4.375rem;
+  text-align: center;
+  display: flex;
+  gap: 1.25rem;
+}
+.icon {
+  height: 1.5rem;
+  width: 1.5rem;
+  color: #fff;
+  padding: 0.75rem;
+  border: 2px solid #fff;
+  border-radius: 50%;
+}
+.attribution {
+  font-size: 0.6875rem;
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media only screen and (max-width: 600px) {
+  .title {
+    font-size: 2.4rem;
+  }
+  .huddle-description {
+    font-size: 1.6rem;
+  }
+  .huddle-view {
+    grid-template-columns: 1fr;
+  }
+  .huddle-text-box {
+    text-align: center;
+  }
+  .icons {
+    right: 12.5rem;
+  }
+  .huddle-register {
+    margin-bottom: 2rem;
+  }
+}
